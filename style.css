@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Rubik:ital,wght@0,300;1,300&display=swap');
+body {
+  /* Full screen width and height */
+  width: 100%;
+  min-height: 100vh;
+    
+  /* Centers the container in the middle of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  overflow: none;
+    
+  margin: 0;
+  background-color: rgb(220, 220, 220);
+  background-image: radial-gradient(#fff, #ddd);
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.container {
+  transition: transform 0.5s;
+}
+
+.card {
+  width: 51vw;
+  height: 33vw;
+  padding: 4vw;
+  border-radius: 0.5vw;
+  box-sizing: border-box;
+  background-color: #e0f8ff;
+  background: radial-gradient(circle at 0, #e0f8ff, #eee0fb);
+  /*background: radial-gradient(circle at 0, #ccf8ff, #d0b2fb);*/
+  box-shadow: 0 1vw 1.5vw rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+  transition: transform 0.1s ease-out;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    transform: scale(1.5);
+  }
+}
+h1 {
+  transform: translateZ(5vw);
+  margin: 0;
+  font-size: 5vw;
+  font-weight: normal;
+  font-family: 'Kumar One Outline', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",Arial,sans-serif;
+}
+p {
+  margin: 1vw 0 0;
+  transform: translateZ(4vw);
+  font-size: 2vw;
+  font-style: italic;
+  font-family: 'Rubik', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",Arial,sans-serif;
+}
+.inner-text {
+  background: -webkit-linear-gradient(0deg, rgb(0,199,228), rgb(165,104,246) 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 1vw rgba(0,199,228, 1);
+}
+
+#confetti-canvas {
+  position: fixed;
+  z-index: -1;
+}
+
+#party-popper {
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+  height: 25vw;
+  transform: translateZ(2vw);
+  fill: rgba(0,199,228, 0.5);
+  -webkit-filter: drop-shadow(0 0 1vw rgba(0,199,228, 1));
+  filter: drop-shadow(0 0 1vw rgba(0,199,228, 1));
+}
