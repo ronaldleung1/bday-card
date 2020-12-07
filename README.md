@@ -5,7 +5,7 @@ This is a plain 'ol digital postcard spiced up with [vanilla-tilt.js](https://gi
 
 ## Usage
 
-Visit this [website](https://bday-card.vercel.app) to view the example. (also available on [CodePen](https://codepen.io/googol88/details/NWRPEmb))
+Visit this [website](https://bday-card.now.sh) to view the example. (also available on [CodePen](https://codepen.io/googol88/details/NWRPEmb))
 
 Clone this repository to create your own version! *or*
 
