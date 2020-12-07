@@ -1,6 +1,3 @@
-/*import vanillaTilt from 'https://cdn.skypack.dev/vanilla-tilt@1.7.0';
-import ConfettiGenerator from 'https://cdn.skypack.dev/confetti-js@0.0.18';*/
-
 VanillaTilt.init(document.querySelectorAll(".card"),{
 	max: 30,
 	speed: 600,
@@ -11,9 +8,6 @@ VanillaTilt.init(document.querySelectorAll(".card"),{
   glare: true
 });
 
-/*
-{"target":"confetti-holder","max":"128","size":"1","animate":true,"props":["circle","square","triangle","line"],"colors":[[165,104,246],[230,61,135],[0,199,228],[253,214,126]],"clock":"16","rotate":true,"width":"","height":"","start_from_edge":false,"respawn":true}
-*/
 (function() {
     let canvas = document.getElementById('confetti-canvas'),
             context = canvas.getContext('2d');
