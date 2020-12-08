@@ -2,6 +2,7 @@
 
 This is a plain 'ol digital postcard spiced up with [vanilla-tilt.js](https://github.com/micku7zu/vanilla-tilt.js) and [confetti-js](https://github.com/Agezao/confetti-js).
 
+![Demo](./assets/bday-card.gif)
 
 ## Usage
 
